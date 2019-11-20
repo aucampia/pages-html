@@ -7,7 +7,7 @@
   <title></title>
 </head>
 <body>
-  <code id="placeholder"></code>
+  <pre id="placeholder"></pre>
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script -->
   <!-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model -->
   <!-- https://developer.mozilla.org/en-US/docs/Web/API/Document -->
@@ -16,8 +16,8 @@
     // https://developer.mozilla.org/en-US/docs/Web/API/Document
     const element = document.getElementById("placeholder");
     // https://developer.mozilla.org/en-US/docs/Web/API/Element
-    element.innerHTML = `
-      navigator.userAgent=${navigator.userAgent}
+    element.innerHTML = `navigator.userAgent=${navigator.userAgent}\n
+${new Date()}
     `;
   </script>
 </body>
