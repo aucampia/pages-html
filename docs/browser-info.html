@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- tidy -quiet blank.html -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element -->
+<head>
+  <title></title>
+</head>
+<body>
+  <code id="placeholder"></code>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/API/Document -->
+  <script type="text/javascript">
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document
+    const element = document.getElementById("placeholder");
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element
+    element.innerHTML = `
+      navigator.userAgent=${navigator.userAgent}
+    `;
+  </script>
+</body>
+</html>
