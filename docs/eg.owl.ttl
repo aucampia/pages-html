@@ -1,0 +1,21 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eg: <xri://e.g/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+eg:O a owl:Ontology ;
+    rdfs:label "eg:Ontology" ;
+    dc:description "Demo ..." ;
+    dc:title "Example Ontology" ;
+    dcterms:license "<https://creativecommons.org/publicdomain/zero/1.0/>" ;
+    owl:versionInfo "0.1-snapshot" .
+
+eg:O:Measurement a owl:Class ;
+    rdfs:label "Measurement" ;
+    rdfs:subClassOf "owl:Thing" .
+
+eg:O:Well a owl:Class ;
+    rdfs:label "Well" ;
+    rdfs:subClassOf "owl:Thing" .
+
